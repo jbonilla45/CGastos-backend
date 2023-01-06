@@ -5,7 +5,7 @@ require("dotenv").config({ path: "variables.env" });
 const conectarDB = async () => {
   try {
     mongoose.set("strictQuery", true);
-    await mongoose.connect(DB_MONGO, {
+    await mongoose.connect(process.env.MONGO_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     //   useFindAndModify: false
