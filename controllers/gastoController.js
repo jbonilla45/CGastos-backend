@@ -53,7 +53,7 @@ exports.updateGasto = async (req, res) => {
     });
     res.json(gasto);
 
-    console.log("se actualizo el gasto correctamente");
+    console.log("se actualizo el gasto");
   } catch (error) {
     console.log(error);
     res.status(500).send("hubo un error al actualizar el gasto");

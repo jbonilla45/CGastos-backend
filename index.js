@@ -17,3 +17,4 @@ app.use(cors());
 conectarDB();
 
 app.use('/api/gastos', require('./routes/gasto'))
+app.use('/api/ingresos', require('./routes/ingreso'))
